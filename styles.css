@@ -1,1 +1,173 @@
 
+/* style.css */
+
+/* Reset margins and base layout constraints */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0b0c10;
+    color: #c5c6c7;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Header Text Accentuation Styles */
+h1 {
+    color: #66fcf1;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #45f3ff;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(102, 252, 241, 0.3);
+}
+
+p {
+    color: #a4a7ab;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #66fcf1;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Challenge Block Structural Architecture */
+.challenge-box {
+    background-color: #1f2833;
+    border: 1px solid #45f3ff;
+    border-radius: 4px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.challenge-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(69, 243, 255, 0.15);
+}
+
+.challenge-box p {
+    color: #c5c6c7;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+/* Flex Row Input Alignments */
+.input-container {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+/* File Download Element Link Styles */
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #0b0c10;
+    color: #45f3ff;
+    border: 1px solid #45f3ff;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+}
+
+.download-btn:hover {
+    background-color: #45f3ff;
+    color: #0b0c10;
+    box-shadow: 0 0 10px rgba(69, 243, 255, 0.4);
+}
+
+/* Submission Input Area Fields */
+input[type="text"] {
+    flex: 1;
+    min-width: 200px;
+    background-color: #0b0c10;
+    border: 1px solid #c5c6c7;
+    color: #ffffff;
+    padding: 12px;
+    font-family: inherit;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #45f3ff;
+    box-shadow: 0 0 8px rgba(69, 243, 255, 0.2);
+}
+
+input[type="text"]::placeholder {
+    color: #4f5d73;
+}
+
+/* Action Interface Buttons */
+button {
+    background-color: #45f3ff;
+    color: #0b0c10;
+    border: none;
+    padding: 12px 24px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #1f2833;
+    color: #45f3ff;
+    border: 1px solid #45f3ff;
+    box-shadow: 0 0 10px rgba(69, 243, 255, 0.4);
+}
+
+/* Verification Result Component Containers */
+.output-box {
+    background-color: #0b0c10;
+    border-left: 4px solid #ff4a4a;
+    color: #ff4a4a;
+    padding: 15px;
+    font-size: 0.9rem;
+    border-radius: 0 4px 4px 0;
+    word-break: break-all;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+/* Dynamic Correct Match Styles via DOM injection classes */
+.output-box.success {
+    border-left-color: #00ff66;
+    color: #00ff66;
+    background-color: rgba(0, 255, 102, 0.04);
+    text-shadow: 0 0 5px rgba(0, 255, 102, 0.2);
+}
+
+/* Mobile Screen Form Adjustments */
+@media (max-width: 600px) {
+    body { padding: 20px 10px; }
+    h1 { font-size: 1.6rem; }
+    .input-container { flex-direction: column; align-items: stretch; gap: 10px; }
+    .download-btn, input[type="text"], button { width: 100%; text-align: center; }
+}
