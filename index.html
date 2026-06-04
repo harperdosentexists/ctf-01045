@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-Stage CTF Arena</title>
+    <!-- Connect our custom stylesheet layout -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <h1>5-Stage Challenge Arena</h1>
+    <p>Download the materials for each stage, find the hidden flag keys, and submit them below to confirm your score.</p>
+
+    <!-- CHALLENGE 1 -->
+    <div id="question1" class="challenge-box" data-hash="c2f6ce8019e6b1a7615529f5b527748e7ea4cb6e347c6d0936cf5820a7e66b40">
+        <h3>Stage 01: Initial Intercept</h3>
+        <p>Something Simple To start it off</p>
+        <div class="input-container">
+            <a href="assets/stage1.dat" download class="download-btn"> Download File</a>
+            <input type="text" placeholder="FLAG{...}">
+            <button onclick="unlockStage(1)">Submit Flag</button>
+            <!-- FLAG{1N5PCT-ELMNT} -->
+        </div>
+        <div class="output-box">Verification Pending...</div>
+    </div>
+
+    <!-- CHALLENGE 2 -->
+    <div id="question2" class="challenge-box" data-hash="CHANGE_ME_TO_HASH_2">
+        <h3>Stage 02: Log Analysis</h3>
+        <p>A secret string hash flag was left behind inside this system transaction report trace file.</p>
+        <div class="input-container">
+            <a href="assets/linesinthedark.png" download class="download-btn"> Download File</a>
+            <input type="text" placeholder="FLAG{...}">
+            <button onclick="unlockStage(2)">Submit Flag</button>
+        </div>
+        <div class="output-box">Verification Pending...</div>
+    </div>
+
+    <!-- CHALLENGE 3 -->
+    <div id="question3" class="challenge-box" data-hash="CHANGE_ME_TO_HASH_3">
+        <h3>Stage 03: Embedded Core</h3>
+        <p>Inspect the data structure layout architecture to extract the target string identifier sequence.</p>
+        <div class="input-container">
+            <a href="assets/stage3.dat" download class="download-btn"> Download File</a>
+            <input type="text" placeholder="FLAG{...}">
+            <button onclick="unlockStage(3)">Submit Flag</button>
+        </div>
+        <div class="output-box">Verification Pending...</div>
+    </div>
+
+    <!-- CHALLENGE 4 -->
+    <div id="question4" class="challenge-box" data-hash="CHANGE_ME_TO_HASH_4">
+        <h3>Stage 04: The Vault Crypt</h3>
+        <p>Identify the access vector string hidden inside the challenge data block array.</p>
+        <div class="input-container">
+            <a href="assets/stage4.dat" download class="download-btn"> Download File</a>
+            <input type="text" placeholder="FLAG{...}">
+            <button onclick="unlockStage(4)">Submit Flag</button>
+        </div>
+        <div class="output-box">Verification Pending...</div>
+    </div>
+
+    <!-- CHALLENGE 5 -->
+    <div id="question5" class="challenge-box" data-hash="CHANGE_ME_TO_HASH_5">
+        <h3>Stage 05: Grand Finale</h3>
+        <p>Deconstruct the final sequence file configuration to uncover the master core flag password key.</p>
+        <div class="input-container">
+            <a href="assets/stage5.dat" download class="download-btn"> Download File</a>
+            <input type="text" placeholder="FLAG{...}">
+            <button onclick="unlockStage(5)">Submit Flag</button>
+        </div>
+        <div class="output-box">Verification Pending...</div>
+    </div>
+
+    <!-- Connect our modular logic asset -->
+    <script src="script.js"></script>
+</body>
+</html>
